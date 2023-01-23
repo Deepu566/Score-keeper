@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="input.css" rel="stylesheet">
+    <title>Score Keeper</title>
+</head>
+
+<body class=" flex justify-center">
+    <div class="w-1/4 pt-7 border">
+        <header>
+            <div class="h-1/5">
+                <img class="h-full object-cover" src="./img/pinpongImg.avif" alt="">
+            </div>
+            <div class="px-3 py-2 border text-gray-800 font-semibold ">
+                Ping Pong score keeper
+            </div>
+        </header>
+        <section class="px-3">
+            <h1 class="text-3xl font-bold">
+                <span class="player1">0</span>
+                to
+                <span class="player2">0</span>
+            </h1>
+            <div class="font-sm text-gray-400">Use the buttons below to keep score</div>
+            <div class="mt-3">
+                <label class="text-lg  font-bold" for="playingTo">Playing To</label>
+                <select class="focus:outline-red-500 border px-3  rounded-full" id="playingTo">
+                    <option value="3">Default(3)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </section>
+        <section class="hidden"></section>
+        <footer class="mt-3 flex text-white">
+            <button class="btn1 font-semibold px-3 mx-0 py-2 bg-green-600 rounded-md">+1 Player one</button>
+            <button class="btn2 font-semibold px-3 mx-0 py-2 bg-blue-600 rounded-md">+2 Player one</button>
+            <button class="reset font-semibold flex-grow px-3 mx-0 py-2 bg-red-600 rounded-md">reset</button>
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
